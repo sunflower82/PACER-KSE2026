@@ -5,8 +5,13 @@ __pycache__/
 venv/
 .env
 
-# Jupyter
+# Jupyter and unpublished tabular dumps
 .ipynb_checkpoints/
+*.ipynb
+*.xlsx
+*.xls
+*.csv
+*.json
 
 # LaTeX temporary files
 *.aux
@@ -25,10 +30,21 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Training artefacts
+# Training artefacts and local data
 checkpoints/
 runs/
 wandb/
 *.ckpt
 *.pth
 *.pt
+*.npy
+*.npz
+data/
+log/
+logs/
+results/
+notebooks/
+
+# Extra PDFs; keep the camera-ready manuscript
+*.pdf
+!paper/*.pdf

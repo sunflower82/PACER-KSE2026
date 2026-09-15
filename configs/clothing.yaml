@@ -1,0 +1,75 @@
+# PACER Clothing (Amazon Clothing 5-core) — paper configuration.
+# Source: locked BASELINE_CLI in scripts/run_kse_final_5seed.py plus the
+# C0 "PACER-full" overrides (LogQ off, base co-occurrence Interest-Tree,
+# DVR/NRDMC-lite on with K=2). Seeds match the camera-ready protocol.
+dataset: Clothing
+core: 5
+epoch: 250
+batch_size: 1024
+lr: 0.000250995
+clip_grad_norm: 1.0
+embed_size: 320
+weight_size: "[64,64,64]"
+topk: 10
+cf_model: LightGCN
+norm_type: sym
+UI_layers: 3
+User_layers: 2
+Item_layers: 2
+item_loss_ratio: 0.07
+user_loss_ratio: 0.03
+temperature: 0.3
+learnable_tau: 0
+Ks: "[10,20]"
+test_flag: part
+use_gpu_eval: 1
+eval_every: 5
+eval_last_epochs: 60
+early_stopping_patience: 5
+early_stopping_min_epochs: 30
+early_stopping_min_delta: 1.0e-4
+early_stopping_mode: max
+early_stopping_restore_best: 1
+early_stopping_monitor: val_recall@20
+use_reduce_lr: 1
+reduce_lr_factor: 0.5
+reduce_lr_patience: 3
+reduce_lr_min: 1.0e-6
+regs: 4.8e-4
+damps_apc: 0
+damps_avrf: 0
+damps_imcf: 1
+damps_permutation_fft: 0
+damps_soft_routing: 1
+damps_momentum: 1
+damps_data_driven_prior: 1
+damps_num_categories: 10
+damps_warmup_epochs: 10
+enable_logq: 0
+logq_scale: 0.0
+enable_simgcl: 0
+lambda_view: 0.1
+enable_nrdmc_lite: 1
+nrdmc_lite_layers: 2
+enable_ptv: 0
+enable_align: 0
+use_macp: 1
+macp_mode: replace_pca
+macp_alpha_p: 0.0
+macp_alpha_z: 0.0
+macp_image_mode: replace_pca
+macp_image_alpha_p: 0.0
+macp_image_alpha_z: 0.0
+enable_tamer: 1
+alpha_interest: 0.50
+pop_inverse_eta: 0.0
+rebuild_R: 5
+use_amp: 1
+use_torch_compile: 1
+use_gpu_sample: 1
+seeds:
+  - 1616406634
+  - 1640104851
+  - 52093548
+  - 109649638
+  - 372270914

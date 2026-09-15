@@ -1,0 +1,28 @@
+# Clothing A1 ablation: same as configs/clothing.yaml with DVR off.
+# Equivalent to C1_A1_noNRDMC in scripts/run_honest_ablation.py.
+dataset: Clothing
+core: 5
+epoch: 250
+batch_size: 1024
+lr: 0.000250995
+embed_size: 320
+UI_layers: 3
+item_loss_ratio: 0.07
+user_loss_ratio: 0.03
+temperature: 0.3
+regs: 4.8e-4
+lambda_view: 0.1
+enable_logq: 0
+logq_scale: 0.0
+enable_nrdmc_lite: 0
+nrdmc_lite_layers: 0
+enable_tamer: 1
+use_macp: 1
+macp_mode: replace_pca
+macp_image_mode: replace_pca
+seeds:
+  - 1616406634
+  - 1640104851
+  - 52093548
+  - 109649638
+  - 372270914

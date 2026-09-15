@@ -9,25 +9,22 @@ Accepted at KSE 2026.
 
 ## Repository status
 
-This repository is currently **private** while camera-ready submission,
-IEEE copyright registration, and KSE/IEEE distribution rights are
-confirmed. It will be switched to public only after those checks.
-
-This first release contains the camera-ready manuscript. Training code
-currently lives in the working repository
+This repository is public. Camera-ready materials and a sanitized
+training snapshot from
 [DAMPS_upgrade_for_MMHCL_randoms_Amazon_Clothing](https://github.com/sunflower82/DAMPS_upgrade_for_MMHCL_randoms_Amazon_Clothing)
-(`wave2/branchA-prime-nrdmc-lite`). A sanitized source snapshot will be
-added here after secrets, datasets, and large artefacts have been
-excluded.
+(`wave2/branchA-prime-nrdmc-lite`) are included.
+
+Notebooks, Excel files, extra PDFs, JSON splits, and aggregated
+result dumps are intentionally omitted until the paper is published.
 
 No license is attached yet. Default copyright remains with the authors.
 
 ## Structure
 
 - `paper/`: camera-ready manuscript source, bibliography, and PDF
-- `src/`: model implementation (to be added)
-- `scripts/`: training and evaluation scripts (to be added)
-- `configs/`: experiment configurations (to be added)
+- `src/`: model implementation (DVR/NRDMC-lite, MACP, Interest-Tree, trainer)
+- `scripts/`: training, preprocessing, evaluation, and HPO drivers
+- `configs/`: Clothing and Sports experiment configurations (YAML)
 - `notebooks/`: supporting notebooks (to be added)
 - `results/`: aggregated experimental results (to be added)
 
@@ -38,6 +35,36 @@ No license is attached yet. Default copyright remains with the authors.
 - `paper/references_v6.bib`
 
 Compile the TeX from `paper/` with the IEEE conference template.
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+Place Amazon Clothing / Sports 5-core files under `data/<Dataset>/`.
+The loader expects `train.json`, `val.json`, `test.json`, and frozen
+modality features. Those payloads are not shipped here.
+
+## Training
+
+From the repository root:
+
+```bash
+PYTHONPATH=src python src/main_tercile.py --data_path ./data \
+    --dataset Clothing --embed_size 320 --UI_layers 3 \
+    --enable_nrdmc_lite 1 --nrdmc_lite_layers 2 \
+    --enable_logq 0 --enable_tamer 1
+```
+
+Locked five-seed Clothing protocol:
+
+```bash
+python scripts/run_kse_final_5seed.py --grid honest
+```
+
+Paper hyperparameters live in `configs/clothing.yaml` and
+`configs/sports.yaml`. DVR is `src/damps/nrdmc_lite.py`.
 
 ## Citation
 
