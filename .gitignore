@@ -46,6 +46,5 @@ logs/
 results/
 notebooks/
 
-# Extra PDFs; keep the camera-ready manuscript
+# Manuscript PDF withheld until IEEE Xplore
 *.pdf
-!paper/*.pdf

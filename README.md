@@ -13,7 +13,7 @@ This repository is public and released under the MIT License (`LICENSE`).
 
 ## Structure
 
-- `paper/`: camera-ready manuscript source, bibliography, and PDF
+- `paper/`: camera-ready manuscript source and bibliography (PDF withheld until IEEE Xplore)
 - `src/`: model implementation (DVR/NRDMC-lite, MACP, Interest-Tree, trainer)
 - `scripts/`: training, preprocessing, evaluation, and HPO drivers
 - `configs/`: Clothing and Sports experiment configurations (YAML)
@@ -23,22 +23,24 @@ This repository is public and released under the MIT License (`LICENSE`).
 
 ## Copyright notice (accepted manuscript)
 
-`paper/PACER_KSE2026_camera_ready.pdf` is the accepted version of a paper
-accepted at KSE 2026. Copyright will be transferred to IEEE upon
-publication. Personal use of this material is permitted. Permission from
-IEEE must be obtained for all other uses, including reprinting/republishing
-this material for advertising or promotional purposes, creating new
-collective works, for resale or redistribution to servers or lists, or
-reuse of any copyrighted component of this work in other works. The IEEE
-Xplore DOI will be added after publication.
+The accepted manuscript of this paper (KSE 2026) is withheld from the
+public repository until it appears in IEEE Xplore. Copyright will be
+transferred to IEEE upon publication. Personal use of this material is
+permitted. Permission from IEEE must be obtained for all other uses,
+including reprinting/republishing this material for advertising or
+promotional purposes, creating new collective works, for resale or
+redistribution to servers or lists, or reuse of any copyrighted component
+of this work in other works. The IEEE Xplore DOI will be added after
+publication.
 
 ## Paper artefacts
 
 - `paper/PACER_KSE2026_camera_ready.tex`
-- `paper/PACER_KSE2026_camera_ready.pdf`
 - `paper/references_v6.bib`
+- `paper/README.md`
 
 Compile the TeX from `paper/` with the IEEE conference template.
+The manuscript PDF is withheld until IEEE Xplore publication.
 
 ## Setup
 
