@@ -9,13 +9,7 @@ Accepted at KSE 2026.
 
 ## Repository status
 
-This repository is public. Camera-ready materials and a sanitized
-training snapshot from
-[DAMPS_upgrade_for_MMHCL_randoms_Amazon_Clothing](https://github.com/sunflower82/DAMPS_upgrade_for_MMHCL_randoms_Amazon_Clothing)
-(`wave2/branchA-prime-nrdmc-lite`) are included.
-
-Notebooks, Excel files, extra PDFs, JSON splits, and aggregated
-result dumps are intentionally omitted until the paper is published.
+This repository is public.
 
 No license is attached yet. Default copyright remains with the authors.
 
