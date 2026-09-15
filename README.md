@@ -13,7 +13,7 @@ This repository is public and released under the MIT License (`LICENSE`).
 
 ## Structure
 
-- `paper/`: camera-ready manuscript source and bibliography (PDF withheld until IEEE Xplore)
+- `paper/`: bibliography only (manuscript PDF and TeX withheld until IEEE Xplore)
 - `src/`: model implementation (DVR/NRDMC-lite, MACP, Interest-Tree, trainer)
 - `scripts/`: training, preprocessing, evaluation, and HPO drivers
 - `configs/`: Clothing and Sports experiment configurations (YAML)
@@ -35,12 +35,11 @@ publication.
 
 ## Paper artefacts
 
-- `paper/PACER_KSE2026_camera_ready.tex`
 - `paper/references_v6.bib`
 - `paper/README.md`
 
-Compile the TeX from `paper/` with the IEEE conference template.
-The manuscript PDF is withheld until IEEE Xplore publication.
+The manuscript PDF and LaTeX source are withheld until IEEE Xplore
+publication.
 
 ## Setup
 

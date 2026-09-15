@@ -46,5 +46,6 @@ logs/
 results/
 notebooks/
 
-# Manuscript PDF withheld until IEEE Xplore
+# Manuscript withheld until IEEE Xplore
 *.pdf
+paper/*.tex
