@@ -9,9 +9,7 @@ Accepted at KSE 2026.
 
 ## Repository status
 
-This repository is public.
-
-No license is attached yet. Default copyright remains with the authors.
+This repository is public and released under the MIT License (`LICENSE`).
 
 ## Structure
 
@@ -19,8 +17,20 @@ No license is attached yet. Default copyright remains with the authors.
 - `src/`: model implementation (DVR/NRDMC-lite, MACP, Interest-Tree, trainer)
 - `scripts/`: training, preprocessing, evaluation, and HPO drivers
 - `configs/`: Clothing and Sports experiment configurations (YAML)
+- `data/README.md`: Hugging Face download links, expected layout, and checksums
 - `notebooks/`: supporting notebooks (to be added)
 - `results/`: aggregated experimental results (to be added)
+
+## Copyright notice (accepted manuscript)
+
+`paper/PACER_KSE2026_camera_ready.pdf` is the accepted version of a paper
+accepted at KSE 2026. Copyright will be transferred to IEEE upon
+publication. Personal use of this material is permitted. Permission from
+IEEE must be obtained for all other uses, including reprinting/republishing
+this material for advertising or promotional purposes, creating new
+collective works, for resale or redistribution to servers or lists, or
+reuse of any copyrighted component of this work in other works. The IEEE
+Xplore DOI will be added after publication.
 
 ## Paper artefacts
 
@@ -36,9 +46,10 @@ Compile the TeX from `paper/` with the IEEE conference template.
 pip install -r requirements.txt
 ```
 
-Place Amazon Clothing / Sports 5-core files under `data/<Dataset>/`.
-The loader expects `train.json`, `val.json`, `test.json`, and frozen
-modality features. Those payloads are not shipped here.
+Place Amazon Clothing / Sports 5-core files under `data/<Dataset>/`
+following `data/README.md`. The loader expects
+`5-core/{train,val,test}.json` plus frozen `image_feat.npy` and
+`text_feat.npy`. Those payloads are not shipped here.
 
 ## Training
 
@@ -62,8 +73,8 @@ Paper hyperparameters live in `configs/clothing.yaml` and
 
 ## Citation
 
-Citation information will be added after publication metadata
-becomes available.
+See `CITATION.cff`. After IEEE Xplore assigns a DOI, that record will
+be updated. Until then, cite the KSE 2026 accepted version.
 
 ## Contact
 

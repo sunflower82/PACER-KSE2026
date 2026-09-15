@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata below.
+title: "PACER: A Perturbation-Aware Contrastive Framework for Long-Tail Multimodal Recommendation"
+authors:
+  - family-names: Le
+    given-names: Minh-Khoi
+    email: khoilm@vnu.edu.vn
+    affiliation: "VNU University of Engineering and Technology"
+license: MIT
+repository-code: "https://github.com/sunflower82/PACER-KSE2026"
+type: software
+year: 2026
+preferred-citation:
+  type: conference-paper
+  title: "PACER: A Perturbation-Aware Contrastive Framework for Long-Tail Multimodal Recommendation"
+  authors:
+    - family-names: Le
+      given-names: Minh-Khoi
+      email: khoilm@vnu.edu.vn
+      affiliation: "VNU University of Engineering and Technology"
+  year: 2026
+  collection-title: "Proceedings of the International Conference on Knowledge and Systems Engineering (KSE)"
+  conference:
+    name: "International Conference on Knowledge and Systems Engineering (KSE 2026)"
+  url: "https://github.com/sunflower82/PACER-KSE2026"
+  notes: "Accepted version. IEEE Xplore DOI to be added after publication."

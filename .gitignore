@@ -39,7 +39,8 @@ wandb/
 *.pt
 *.npy
 *.npz
-data/
+data/**
+!data/README.md
 log/
 logs/
 results/
